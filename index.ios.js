@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <Navigator
           initialRoute={{id: 'SplashPage', name: 'Index'}}
-          renderScene={this.renderScene.bind(this)}
+          renderScene={() => this.renderScene())}
           configureScene={(route) => {
             if (route.sceneConfig) {
               return route.sceneConfig;
